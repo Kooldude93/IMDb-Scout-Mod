@@ -3037,7 +3037,7 @@ var private_sites = [
       'positiveMatch': true,
       'both': true},
   {   'name': 'Oldtoons',
-      'searchUrl': 'https://oldtoons.world/torrents.php?incldead=1&spstate=0&inclbookmarked=0&size_begin=&size_end=&seeders_begin=&seeders_end=&leechers_begin=&leechers_end=&times_completed_begin=&times_completed_end=&added_begin=&added_end=&search=%search_string%&search_area=0&search_mode=0',
+      'searchUrl': 'https://oldtoons.world/torrents?perPage=25&name=%search_string%',
       'loggedOutRegex': /<title>MySpleen :: Login<\/title>/,
       'matchRegex': /<strong>Nothing found!<\/strong>/,
       'both': true},

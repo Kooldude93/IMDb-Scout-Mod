@@ -2622,7 +2622,7 @@ var private_sites = [
       'both': true},
   {   'name': 'FL',
       'icon': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAElBMVEUfotUje54mZHwpTFssLS8shKW30acsAAAANElEQVQI12MIhQKGEBcwcMXLcGZgMIAwWFzgDAUww4mBGcJwZHERgOhicXFgYHElymSYMwA+oyC+xS3dSAAAAABJRU5ErkJggg==',
-      'searchUrl': 'https://filelist.io/browse.php?search=%nott%&cat=0&searchin=3&sort=2',
+      'searchUrl': 'https://filelist.io/browse.php?search=%search_string%&cat=0&searchin=1&sort=2',
       'loggedOutRegex': /Login on any IP/,
       'matchRegex': /Nu s-a găsit nimic!/,
       'both': true},

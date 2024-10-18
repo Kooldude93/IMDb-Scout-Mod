@@ -3131,7 +3131,7 @@ var private_sites = [
       'positiveMatch': true,
       'both': true},
   {   'name': 'OldToonsWorld',
-      'searchUrl': 'https://oldtoons.world/torrents?imdbId=%nott%',
+      'searchUrl': 'https://oldtoons.world/torrents?name=%search_string%',
       'loggedOutRegex': /Cloudflare|Ray ID|Forgot Your Password/,
       'matchRegex': /torrent-search--list__overview/,
       'positiveMatch': true,

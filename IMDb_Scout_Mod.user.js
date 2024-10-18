@@ -5903,7 +5903,10 @@ var icon_sites_main = [
   {   'name': 'YouTube (Piped)',
       'icon': 'https://www.youtube.com/s/desktop/640aba68/img/favicon_32.png',
       'searchUrl': 'https://piped.kavin.rocks/results?search_query="%search_string%"+%year%+trailer',
-      'showByDefault': false}
+      'showByDefault': false},
+  {   'name': 'Jellyseer',
+      'searchUrl': 'https://jellyseerr.commie-lab.net/search?query=%search_string%',
+      'showByDefault': true}
 ];
 
 // Class of these should be renamed(search: "class of the special buttons").

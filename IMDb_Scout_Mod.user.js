@@ -2375,6 +2375,7 @@ var private_sites = [
       'searchUrl': 'https://beyond-hd.me/torrents/all?search=&doSearch=Search&imdb=%nott%',
       'loggedOutRegex': /FORGET PASSWORD/,
       'matchRegex': />N\/A</,
+      'seedingRegex': /<i class="fal fa-seedling" title="Seeding"/,
       'rateLimit': 625,
       'both': true},
   {   'name': 'BHD-Req',
@@ -3137,6 +3138,7 @@ var private_sites = [
       'searchUrl': 'https://lat-team.com/torrents?tmdbId=%tmdbid%',
       'loggedOutRegex': /Cloudflare|Ray ID|Forgot Your Password/,
       'matchRegex': /torrent-search--list__overview/,
+      'seedingRegex': /fa-arrow-circle-up/,
       'positiveMatch': true,
       'both': true},
   {   'name': 'Lat-Team-Req',
@@ -3284,6 +3286,7 @@ var private_sites = [
       'loggedOutRegex': /Cloudflare|Ray ID|forgotten password/,
       'spaceEncode': '+%2B',
       'matchRegex': /action=download/,
+      'seedingRegex': /Currently Seeding Torrent/, // Not reliable
       'positiveMatch': true},
   {   'name': 'MTV',
       'icon': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABABAMAAABYR2ztAAAAMFBMVEUAAACLAAB/AACXAgK2Hh7sfn68KSnUcnKlERHMVVXJBgbHNzfbYGCpAgLFRUXsbm7V8QghAAAAAXRSTlMAQObYZgAAAdRJREFUSMfV1L9LAmEYB/B3sTKNejJSCYK3SBrveoemoOEdghYXERpqSK4hBLejiAaFcHTMRQj/gSaXEhpaDB3MOZBWSfoDgnpePeX1uvfewaW+w9293Oee9wfcQ/5dSs79WgUCzr2rLJEbXIO6mWZ1r3ApvnMENdWxgCZJzdsw8c1x6jE1jnxEdqNfsw6KhQIwGGWZ3o9B+qrcq2UQMGaCJJ4mAS8WO4yBJLZGwEZg8WJBfL4xCj5vE1dSqZNvJ1+3FIASv7zrQIjCpi8ILP8CZ5PDHTeoG/7gw1zyBS0T/EGV6gBMB4K8AxDjnIuf4pnzQzeYacMwhlPMDUKvDoji4A6dEqwSEsZqJTeYH0zBACL4bOLVDQINnHjtxQRAALCu2ibO3iUtfFKBqljeKcC+CrScMsqTxPVFcRMRJQi2YRXPLK4EovylCYYa4HUPd6IAeMwLIEIUIEaSuEq8e4KsOOrdkDjyJU/QAkxcrBIMT4DFBahTgJInCFQRrJAjk0UU/0U4+3ZTwmZj5yTgl+nBItWAOQ1YzANQuVM2G+V+76FmWVaGi+SpBNIXFdEmmdzkKA4SXn2SSX3SGAG7MaxgYgUpCblD2s1ypS+WwMc5/yR/Ij/XK54cbp5ZdAAAAABJRU5ErkJggg==',
@@ -3483,6 +3486,7 @@ var private_sites = [
       'searchUrl': 'https://passthepopcorn.me/torrents.php?imdb=%tt%',
       'loggedOutRegex': /Cloudflare|Ray ID|Keep me logged in|Your popcorn quota/,
       'matchRegex': /Your search did not match anything/,
+      'seedingRegex': /title="Seeding"/,
       'rateLimit': 250,
       'both': true},
   {   'name': 'PTP-Req',
@@ -4232,6 +4236,7 @@ var chinese_sites = [
       'searchUrl': 'https://oldtoons.world/torrents?imdbId=%nott%',
       'loggedOutRegex': /Cloudflare|Ray ID|Forgot Your Password/,
       'matchRegex': /torrent-search--list__overview/,
+      'seedingRegex': /fa-arrow-circle-up/,
       'positiveMatch': true,
       'both': true},
   {   'name': 'OldToonsWorld-Req',
@@ -12170,7 +12175,6 @@ $.each(icon_sites, function(index, icon_site) {
 
 // For internal use (order matters).
 const valid_states = [
-  'seeding',
   'found',
   'missing',
   'logged_out',

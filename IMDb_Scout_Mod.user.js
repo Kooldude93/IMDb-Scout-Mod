@@ -3518,7 +3518,6 @@ var private_sites = [
       'searchUrl': 'https://passthepopcorn.me/torrents.php?imdb=%tt%',
       'loggedOutRegex': /Cloudflare|Ray ID|Keep me logged in|Your popcorn quota/,
       'matchRegex': /Your search did not match anything/,
-      'seedingRegex': /title="Seeding"/,
       'rateLimit': 250,
       'both': true},
   {   'name': 'PTP-Req',
@@ -12498,3 +12497,4 @@ if (onReferencePage) {
 
 scoutWarning();
 scoutWarning2();
+
